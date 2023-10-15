@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/calc.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favIcon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favIcon/favicon-16x16.png">
+    <link rel="manifest" href="./favIcon/site.webmanifest">
+
+    <title>Calculator With Glassmorphism Effect | Gourab Talukdar</title>
+</head>
+<body class="d-flex flex-col">
+    <div class="container">
+        <div class="display">0</div>
+        <hr/>
+        <div class="btn-container d-oflex flex-col gap">
+            <div class="d-oflex align-center justify-between gap">
+                <div class="btn function-key" style="font-size: 1.2rem;" data-button-type="operator" data-value="clear" id="clear_button">AC</div>
+                <div class="btn function-key" data-button-type="operator" data-value="+/-">+/-</div>
+                <div class="btn function-key" data-button-type="operator" data-value="%">%</div>
+                <div class="btn operator-key" style="font-size: 1.2rem;" data-button-type="operator" data-value="/">/</div>
+            </div>
+            <div class="d-oflex align-center justify-between gap">
+                <div class="btn" data-button-type="digit" data-value="7">7</div>
+                <div class="btn" data-button-type="digit" data-value="8">8</div>
+                <div class="btn" data-button-type="digit" data-value="9">9</div>
+                <div class="btn operator-key" data-button-type="operator" data-value="*">x</div>
+            </div>
+            <div class="d-oflex align-center justify-between gap">
+                <div class="btn" data-button-type="digit" data-value="4">4</div>
+                <div class="btn" data-button-type="digit" data-value="5">5</div>
+                <div class="btn" data-button-type="digit" data-value="6">6</div>
+                <div class="btn operator-key lg-txt" data-button-type="operator" data-value="-">-</div>
+            </div>
+            <div class="d-oflex align-center justify-between gap">
+                <div class="btn" data-button-type="digit" data-value="1">1</div>
+                <div class="btn" data-button-type="digit" data-value="2">2</div>
+                <div class="btn" data-button-type="digit" data-value="3">3</div>
+                <div class="btn operator-key lg-txt" data-button-type="operator" data-value="+">+</div>
+            </div>
+            <div class="d-oflex align-center justify-between gap">
+                <!-- <div class="btn" data-button-type="operator" data-value="+">+</div> -->
+                <div class="btn" data-button-type="digit" data-value="0">0</div>
+                <div class="btn" data-button-type="digit" data-value="."><span class="dot"></span></div>
+                <div class="btn operator-key expand-btn" data-button-type="operator" data-value="=">=</div>
+            </div>
+        </div>
+    </div>
+    <div class="moving-shape"></div>
+    <footer>Developed & Designed by &nbsp;<span><a href="https://github.com/gourab-talukdar" target="_blank">Gourab Talukdar</a></span></footer>
+    <script src="./js/calc.js"></script>
+</body>
+</html>
